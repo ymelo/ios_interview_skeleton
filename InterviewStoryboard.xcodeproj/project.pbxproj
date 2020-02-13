@@ -19,6 +19,7 @@
 		ECBB8A0923F5C7190094A958 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8A0823F5C7190094A958 /* User.swift */; };
 		ECBB8A0B23F5C77B0094A958 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8A0A23F5C77B0094A958 /* LandingViewController.swift */; };
 		ECBB8A0D23F5CB620094A958 /* MockedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8A0C23F5CB620094A958 /* MockedData.swift */; };
+		ECBB8A0F23F5EFE80094A958 /* SimpleCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8A0E23F5EFE80094A958 /* SimpleCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		ECBB8A0823F5C7190094A958 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ECBB8A0A23F5C77B0094A958 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		ECBB8A0C23F5CB620094A958 /* MockedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedData.swift; sourceTree = "<group>"; };
+		ECBB8A0E23F5EFE80094A958 /* SimpleCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				ECBB8A0823F5C7190094A958 /* User.swift */,
 				ECBB8A0A23F5C77B0094A958 /* LandingViewController.swift */,
 				ECBB8A0C23F5CB620094A958 /* MockedData.swift */,
+				ECBB8A0E23F5EFE80094A958 /* SimpleCollectionCell.swift */,
 			);
 			path = InterviewStoryboard;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				ECBB89D923F5C60C0094A958 /* ViewController.swift in Sources */,
 				ECBB89D523F5C60C0094A958 /* AppDelegate.swift in Sources */,
 				ECBB89D723F5C60C0094A958 /* SceneDelegate.swift in Sources */,
+				ECBB8A0F23F5EFE80094A958 /* SimpleCollectionCell.swift in Sources */,
 				ECBB8A0923F5C7190094A958 /* User.swift in Sources */,
 				ECBB8A0B23F5C77B0094A958 /* LandingViewController.swift in Sources */,
 				ECBB8A0D23F5CB620094A958 /* MockedData.swift in Sources */,

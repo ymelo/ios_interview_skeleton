@@ -82,30 +82,31 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ixN-bj-G2J">
-                                        <rect key="frame" x="0.5" y="0.0" width="373" height="46"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TA0-Dk-nfq">
-                                            <rect key="frame" x="0.0" y="0.0" width="373" height="46"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="meeting_collection_view" id="slI-FO-V6g" customClass="SimpleCollectionCell" customModule="InterviewStoryboard" customModuleProvider="target">
+                                        <rect key="frame" x="0.5" y="0.0" width="373" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Yze-Mk-Ul1">
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yj7-hi-EYm">
-                                                    <rect key="frame" x="8" y="13" width="357" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xlx-4h-wsD">
+                                                    <rect key="frame" x="8" y="15" width="357" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Yj7-hi-EYm" firstAttribute="leading" secondItem="TA0-Dk-nfq" secondAttribute="leading" constant="8" id="EOX-bq-GqQ"/>
-                                                <constraint firstItem="Yj7-hi-EYm" firstAttribute="top" secondItem="TA0-Dk-nfq" secondAttribute="top" constant="13" id="FlX-wU-CGN"/>
-                                                <constraint firstAttribute="bottom" secondItem="Yj7-hi-EYm" secondAttribute="bottom" constant="12" id="Lh5-bg-LTa"/>
-                                                <constraint firstAttribute="trailing" secondItem="Yj7-hi-EYm" secondAttribute="trailing" constant="8" id="dw7-mb-fTp"/>
-                                            </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="373" height="46"/>
+                                        <connections>
+                                            <outlet property="title" destination="Xlx-4h-wsD" id="pWx-1x-ahj"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="dlg-fy-j1L" id="a19-8a-exd"/>
+                                    <outlet property="delegate" destination="dlg-fy-j1L" id="QGp-9h-A8k"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
