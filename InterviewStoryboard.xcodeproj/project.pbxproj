@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CC33CD124604C1E00DA8184 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC33CD024604C1E00DA8184 /* WebViewController.swift */; };
+		4CC33CD424604CC500DA8184 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC33CD324604CC500DA8184 /* WebKit.framework */; };
+		4CC33CD62460544D00DA8184 /* UserDefaults+TermsAndConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC33CD52460544D00DA8184 /* UserDefaults+TermsAndConditions.swift */; };
+		4CC33CDA24606C3A00DA8184 /* UserCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC33CD924606C3A00DA8184 /* UserCollectionCell.swift */; };
 		ECBB89D523F5C60C0094A958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB89D423F5C60C0094A958 /* AppDelegate.swift */; };
 		ECBB89D723F5C60C0094A958 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB89D623F5C60C0094A958 /* SceneDelegate.swift */; };
-		ECBB89D923F5C60C0094A958 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB89D823F5C60C0094A958 /* ViewController.swift */; };
+		ECBB89D923F5C60C0094A958 /* MeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB89D823F5C60C0094A958 /* MeetingViewController.swift */; };
 		ECBB89DC23F5C60C0094A958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECBB89DA23F5C60C0094A958 /* Main.storyboard */; };
 		ECBB89DE23F5C60D0094A958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECBB89DD23F5C60D0094A958 /* Assets.xcassets */; };
 		ECBB89E123F5C60D0094A958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECBB89DF23F5C60D0094A958 /* LaunchScreen.storyboard */; };
 		ECBB89EC23F5C60D0094A958 /* InterviewStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB89EB23F5C60D0094A958 /* InterviewStoryboardTests.swift */; };
 		ECBB89F723F5C60D0094A958 /* InterviewStoryboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB89F623F5C60D0094A958 /* InterviewStoryboardUITests.swift */; };
-		ECBB8A0723F5C6D80094A958 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8A0623F5C6D80094A958 /* WebViewController.swift */; };
 		ECBB8A0923F5C7190094A958 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8A0823F5C7190094A958 /* User.swift */; };
 		ECBB8A0B23F5C77B0094A958 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8A0A23F5C77B0094A958 /* LandingViewController.swift */; };
 		ECBB8A0D23F5CB620094A958 /* MockedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8A0C23F5CB620094A958 /* MockedData.swift */; };
@@ -40,10 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4CC33CD024604C1E00DA8184 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		4CC33CD324604CC500DA8184 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		4CC33CD52460544D00DA8184 /* UserDefaults+TermsAndConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+TermsAndConditions.swift"; sourceTree = "<group>"; };
+		4CC33CD924606C3A00DA8184 /* UserCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionCell.swift; sourceTree = "<group>"; };
 		ECBB89D123F5C60C0094A958 /* InterviewStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBB89D423F5C60C0094A958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECBB89D623F5C60C0094A958 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ECBB89D823F5C60C0094A958 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECBB89D823F5C60C0094A958 /* MeetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingViewController.swift; sourceTree = "<group>"; };
 		ECBB89DB23F5C60C0094A958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECBB89DD23F5C60D0094A958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECBB89E023F5C60D0094A958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,7 +61,6 @@
 		ECBB89F223F5C60D0094A958 /* InterviewStoryboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewStoryboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBB89F623F5C60D0094A958 /* InterviewStoryboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewStoryboardUITests.swift; sourceTree = "<group>"; };
 		ECBB89F823F5C60D0094A958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECBB8A0623F5C6D80094A958 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		ECBB8A0823F5C7190094A958 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ECBB8A0A23F5C77B0094A958 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		ECBB8A0C23F5CB620094A958 /* MockedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedData.swift; sourceTree = "<group>"; };
@@ -66,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CC33CD424604CC500DA8184 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,14 +93,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CC33CD224604CC500DA8184 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CC33CD324604CC500DA8184 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ECBB89C823F5C60C0094A958 = {
 			isa = PBXGroup;
 			children = (
-				ECBB8A0623F5C6D80094A958 /* WebViewController.swift */,
 				ECBB89D323F5C60C0094A958 /* InterviewStoryboard */,
 				ECBB89EA23F5C60D0094A958 /* InterviewStoryboardTests */,
 				ECBB89F523F5C60D0094A958 /* InterviewStoryboardUITests */,
 				ECBB89D223F5C60C0094A958 /* Products */,
+				4CC33CD224604CC500DA8184 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,7 +127,7 @@
 			children = (
 				ECBB89D423F5C60C0094A958 /* AppDelegate.swift */,
 				ECBB89D623F5C60C0094A958 /* SceneDelegate.swift */,
-				ECBB89D823F5C60C0094A958 /* ViewController.swift */,
+				ECBB89D823F5C60C0094A958 /* MeetingViewController.swift */,
 				ECBB89DA23F5C60C0094A958 /* Main.storyboard */,
 				ECBB89DD23F5C60D0094A958 /* Assets.xcassets */,
 				ECBB89DF23F5C60D0094A958 /* LaunchScreen.storyboard */,
@@ -121,6 +136,9 @@
 				ECBB8A0A23F5C77B0094A958 /* LandingViewController.swift */,
 				ECBB8A0C23F5CB620094A958 /* MockedData.swift */,
 				ECBB8A0E23F5EFE80094A958 /* SimpleCollectionCell.swift */,
+				4CC33CD024604C1E00DA8184 /* WebViewController.swift */,
+				4CC33CD52460544D00DA8184 /* UserDefaults+TermsAndConditions.swift */,
+				4CC33CD924606C3A00DA8184 /* UserCollectionCell.swift */,
 			);
 			path = InterviewStoryboard;
 			sourceTree = "<group>";
@@ -274,14 +292,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECBB89D923F5C60C0094A958 /* ViewController.swift in Sources */,
+				ECBB89D923F5C60C0094A958 /* MeetingViewController.swift in Sources */,
 				ECBB89D523F5C60C0094A958 /* AppDelegate.swift in Sources */,
 				ECBB89D723F5C60C0094A958 /* SceneDelegate.swift in Sources */,
+				4CC33CD62460544D00DA8184 /* UserDefaults+TermsAndConditions.swift in Sources */,
 				ECBB8A0F23F5EFE80094A958 /* SimpleCollectionCell.swift in Sources */,
 				ECBB8A0923F5C7190094A958 /* User.swift in Sources */,
+				4CC33CDA24606C3A00DA8184 /* UserCollectionCell.swift in Sources */,
 				ECBB8A0B23F5C77B0094A958 /* LandingViewController.swift in Sources */,
 				ECBB8A0D23F5CB620094A958 /* MockedData.swift in Sources */,
-				ECBB8A0723F5C6D80094A958 /* WebViewController.swift in Sources */,
+				4CC33CD124604C1E00DA8184 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

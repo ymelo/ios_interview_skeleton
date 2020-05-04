@@ -7,11 +7,14 @@
 //
 
 import Foundation
-struct User {
+struct User: Decodable {
     var id: Int
-    // ..
+    var name: String
+    var profilePicture: URL
 }
 
-struct Meeting {
-    // ...
+struct Meeting: Decodable {
+    var name: String
+    var participants: [User]
+    var date: Date
 }
