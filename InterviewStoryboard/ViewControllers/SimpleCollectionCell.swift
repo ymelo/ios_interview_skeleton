@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import Foundation
 import UIKit
+
 class SimpleCollectionCell: UICollectionViewCell {
     @IBOutlet weak var title: UILabel!
 }

@@ -10,6 +10,11 @@
 		A436EAD6246C04620025240E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A436EAD5246C04620025240E /* WebViewController.swift */; };
 		A436EAD9246C049F0025240E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A436EAD8246C049F0025240E /* WebKit.framework */; };
 		A436EADE246C08000025240E /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A436EADD246C08000025240E /* Meeting.swift */; };
+		A436EAE1246C0BDA0025240E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A436EAE0246C0BDA0025240E /* Constants.swift */; };
+		A445CB21246C2CB300FC8CCA /* MeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A445CB20246C2CB300FC8CCA /* MeetingViewController.swift */; };
+		A445CB24246C2D2200FC8CCA /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A445CB23246C2D2200FC8CCA /* DateExtensions.swift */; };
+		A445CB26246C2D6600FC8CCA /* MeetingUserCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A445CB25246C2D6600FC8CCA /* MeetingUserCollectionCell.swift */; };
+		A445CB2F246C371800FC8CCA /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A445CB2E246C371800FC8CCA /* UIImageViewExtensions.swift */; };
 		ECBB89D523F5C60C0094A958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB89D423F5C60C0094A958 /* AppDelegate.swift */; };
 		ECBB89D723F5C60C0094A958 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB89D623F5C60C0094A958 /* SceneDelegate.swift */; };
 		ECBB89D923F5C60C0094A958 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB89D823F5C60C0094A958 /* ViewController.swift */; };
@@ -45,6 +50,11 @@
 		A436EAD5246C04620025240E /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		A436EAD8246C049F0025240E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A436EADD246C08000025240E /* Meeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
+		A436EAE0246C0BDA0025240E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A445CB20246C2CB300FC8CCA /* MeetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingViewController.swift; sourceTree = "<group>"; };
+		A445CB23246C2D2200FC8CCA /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		A445CB25246C2D6600FC8CCA /* MeetingUserCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingUserCollectionCell.swift; sourceTree = "<group>"; };
+		A445CB2E246C371800FC8CCA /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		ECBB89D123F5C60C0094A958 /* InterviewStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBB89D423F5C60C0094A958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECBB89D623F5C60C0094A958 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +124,8 @@
 				ECBB89D823F5C60C0094A958 /* ViewController.swift */,
 				ECBB8A0A23F5C77B0094A958 /* LandingViewController.swift */,
 				ECBB8A0E23F5EFE80094A958 /* SimpleCollectionCell.swift */,
+				A445CB20246C2CB300FC8CCA /* MeetingViewController.swift */,
+				A445CB25246C2D6600FC8CCA /* MeetingUserCollectionCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -125,6 +137,23 @@
 				A436EADD246C08000025240E /* Meeting.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A436EADF246C0BAC0025240E /* Supplemental */ = {
+			isa = PBXGroup;
+			children = (
+				A436EAE0246C0BDA0025240E /* Constants.swift */,
+			);
+			path = Supplemental;
+			sourceTree = "<group>";
+		};
+		A445CB22246C2CEB00FC8CCA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A445CB23246C2D2200FC8CCA /* DateExtensions.swift */,
+				A445CB2E246C371800FC8CCA /* UIImageViewExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		ECBB89C823F5C60C0094A958 = {
@@ -158,6 +187,8 @@
 				A436EADC246C04FF0025240E /* Model */,
 				A436EADB246C04D60025240E /* ViewControllers */,
 				A436EADA246C04C60025240E /* Data */,
+				A445CB22246C2CEB00FC8CCA /* Extensions */,
+				A436EADF246C0BAC0025240E /* Supplemental */,
 				ECBB89DD23F5C60D0094A958 /* Assets.xcassets */,
 				ECBB89E223F5C60D0094A958 /* Info.plist */,
 			);
@@ -313,11 +344,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A445CB2F246C371800FC8CCA /* UIImageViewExtensions.swift in Sources */,
 				ECBB89D923F5C60C0094A958 /* ViewController.swift in Sources */,
 				A436EADE246C08000025240E /* Meeting.swift in Sources */,
+				A445CB21246C2CB300FC8CCA /* MeetingViewController.swift in Sources */,
+				A445CB26246C2D6600FC8CCA /* MeetingUserCollectionCell.swift in Sources */,
 				ECBB89D523F5C60C0094A958 /* AppDelegate.swift in Sources */,
 				ECBB89D723F5C60C0094A958 /* SceneDelegate.swift in Sources */,
+				A445CB24246C2D2200FC8CCA /* DateExtensions.swift in Sources */,
 				ECBB8A0F23F5EFE80094A958 /* SimpleCollectionCell.swift in Sources */,
+				A436EAE1246C0BDA0025240E /* Constants.swift in Sources */,
 				ECBB8A0923F5C7190094A958 /* User.swift in Sources */,
 				ECBB8A0B23F5C77B0094A958 /* LandingViewController.swift in Sources */,
 				ECBB8A0D23F5CB620094A958 /* MockedData.swift in Sources */,
