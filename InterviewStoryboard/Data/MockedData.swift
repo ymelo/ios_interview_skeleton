@@ -35,9 +35,9 @@ class MockedData {
     /// The strings generated still contain some escaping characters, you may need to edit this method :)
     func user(withId id: Int) -> String? {
         switch id {
-        case 0: return json(fromDictionary: ["id": "0", "name": "Someone else", "profilePicture": "url_here"])
-        case 1: return json(fromDictionary: ["id": "1", "name": "Someone else 1", "profilePicture": "url_here"])
-        case 2: return json(fromDictionary: ["id": "2", "name": "Me", "profilePicture": "url_here"])
+        case 0: return json(fromDictionary: ["id": "0", "name": "John", "profilePicture": "url_here"])
+        case 1: return json(fromDictionary: ["id": "1", "name": "Jane", "profilePicture": "url_here"])
+        case 2: return json(fromDictionary: ["id": "2", "name": "James", "profilePicture": "url_here"])
         default:
             return nil
         }
@@ -47,11 +47,12 @@ class MockedData {
     /// The strings generated still contain some escaping characters, you may need to edit this method :)
     func meetings(forUser user: User) -> String? {
         switch user.id {
-        case 2:
             
-            return "[{\"name\":\"Meeting 1\", \"participants\":[{\"id\": \"0\", \"name\": \"Someone\", \"profilePicture\": \"url_here\"}, {\"id\": \"1\", \"name\": \"Someone else\", \"profilePicture\": \"url_here\"}]}]"
-        default:
-            return nil
+            case 2:
+                return "[{\"name\":\"Daily meeting\", \"date\":\"2020-05-14T14:00:00Z\", \"participants\":[{\"id\": \"1\", \"name\": \"Jane\", \"profilePicture\": \"url_here\"},{\"id\": \"0\", \"name\": \"John\", \"profilePicture\": \"url_here\"}]},{\"name\":\"Team Meeting\", \"date\":\"2020-05-14T15:30:00Z\", \"participants\":[{\"id\": \"0\", \"name\": \"John\", \"profilePicture\": \"url_here\"}, {\"id\": \"1\", \"name\": \"Jane\", \"profilePicture\": \"url_here\"}]}]"
+            
+            default:
+                return nil
         }
     }
 }

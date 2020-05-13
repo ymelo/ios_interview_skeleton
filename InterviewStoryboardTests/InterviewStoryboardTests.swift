@@ -45,4 +45,33 @@ class InterviewStoryboardTests: XCTestCase {
         }
     }
     
+    func testCanGetAndDecodeCurrentUserMeetings() {
+        if let user = mockedData.currentUser() {
+            let jsonData = user.data(using: .utf8)!
+            let decoder = JSONDecoder()
+            do {
+                let currentUserObject = try decoder.decode(User.self, from: jsonData)
+                if let userMeetings = mockedData.meetings(forUser: currentUserObject)
+                {
+                    let jsonData = userMeetings.data(using: .utf8)!
+                    let decoder = JSONDecoder()
+                    decoder.dateDecodingStrategy = .iso8601
+                    
+                    do {
+                        let meetings = try decoder.decode([Meeting].self, from: jsonData)
+                        
+                        // expecting SOME meetings - ideally we'd mock all data in setup to be sure how many
+                        // but since our data IS mocked data...
+                        XCTAssert(meetings.count > 0, "No meetings retrieved/decoded")
+                    } catch {
+                        XCTFail("Error decoding meetings: \(error)")
+                    }
+                }
+            } catch {
+                XCTFail("Error decoding current user meetings: \(error)")
+            }
+        } else {
+            XCTFail("Attempt to get current user returned nil")
+        }
+    }
 }

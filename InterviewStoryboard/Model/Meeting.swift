@@ -8,6 +8,8 @@
 
 import Foundation
 
-struct Meeting {
-    // ...
+struct Meeting: Codable {
+    var name: String
+    var date: Date
+    var participants: [User]
 }
