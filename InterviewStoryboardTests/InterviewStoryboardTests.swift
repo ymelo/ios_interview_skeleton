@@ -11,6 +11,8 @@ import XCTest
 
 class InterviewStoryboardTests: XCTestCase {
 
+    let mockedData = MockedData()
+
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -19,16 +21,28 @@ class InterviewStoryboardTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testCanGetCurrentUser() {
+        if let user = mockedData.currentUser() {
+            XCTAssert(!user.isEmpty, "current user has no data")
+        } else {
+            XCTFail()
         }
     }
-
+    
+    func testCanDecodeCurrentUserToUserObject() {
+        if let user = mockedData.currentUser() {
+            let jsonData = user.data(using: .utf8)!
+            let decoder = JSONDecoder()
+            do {
+                let currentUserObject = try decoder.decode(User.self, from: jsonData)
+                XCTAssert(!currentUserObject.name.isEmpty, "User name is empty where a value was expected")
+                XCTAssert(!currentUserObject.profilePicture.isEmpty, "Decoded user has no profile picture")
+            } catch {
+                XCTFail("Error decoding current user: \(error)")
+            }
+        } else {
+            XCTFail("Attempt to get current user returned nil")
+        }
+    }
+    
 }

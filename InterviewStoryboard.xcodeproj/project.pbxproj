@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A436EAD6246C04620025240E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A436EAD5246C04620025240E /* WebViewController.swift */; };
 		A436EAD9246C049F0025240E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A436EAD8246C049F0025240E /* WebKit.framework */; };
+		A436EADE246C08000025240E /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A436EADD246C08000025240E /* Meeting.swift */; };
 		ECBB89D523F5C60C0094A958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB89D423F5C60C0094A958 /* AppDelegate.swift */; };
 		ECBB89D723F5C60C0094A958 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB89D623F5C60C0094A958 /* SceneDelegate.swift */; };
 		ECBB89D923F5C60C0094A958 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB89D823F5C60C0094A958 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		A436EAD5246C04620025240E /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		A436EAD8246C049F0025240E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A436EADD246C08000025240E /* Meeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
 		ECBB89D123F5C60C0094A958 /* InterviewStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBB89D423F5C60C0094A958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECBB89D623F5C60C0094A958 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				ECBB8A0823F5C7190094A958 /* User.swift */,
+				A436EADD246C08000025240E /* Meeting.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECBB89D923F5C60C0094A958 /* ViewController.swift in Sources */,
+				A436EADE246C08000025240E /* Meeting.swift in Sources */,
 				ECBB89D523F5C60C0094A958 /* AppDelegate.swift in Sources */,
 				ECBB89D723F5C60C0094A958 /* SceneDelegate.swift in Sources */,
 				ECBB8A0F23F5EFE80094A958 /* SimpleCollectionCell.swift in Sources */,

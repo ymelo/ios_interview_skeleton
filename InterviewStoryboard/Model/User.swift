@@ -7,11 +7,20 @@
 //
 
 import Foundation
-struct User {
+struct User: Codable {
     var id: Int
-    // ..
-}
-
-struct Meeting {
-    // ...
+    var name: String
+    var profilePicture: String
+    
+    // custom decoder required for type conversion of id (String -> Int)
+    enum CodingKeys: CodingKey { case id, name, profilePicture }
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        let idString = try container.decode(String.self, forKey: .id)
+        id = Int(idString)!
+        
+        name = try container.decode(String.self, forKey: .name)
+        profilePicture = try container.decode(String.self, forKey: .profilePicture)
+    }
 }
