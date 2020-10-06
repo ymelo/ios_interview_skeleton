@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC436DF2252BFD2700AFA940 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC436DF1252BFD2700AFA940 /* WebViewController.swift */; };
 		ECBB89D523F5C60C0094A958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB89D423F5C60C0094A958 /* AppDelegate.swift */; };
 		ECBB89D723F5C60C0094A958 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB89D623F5C60C0094A958 /* SceneDelegate.swift */; };
-		ECBB89D923F5C60C0094A958 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB89D823F5C60C0094A958 /* ViewController.swift */; };
 		ECBB89DC23F5C60C0094A958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECBB89DA23F5C60C0094A958 /* Main.storyboard */; };
 		ECBB89DE23F5C60D0094A958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECBB89DD23F5C60D0094A958 /* Assets.xcassets */; };
 		ECBB89E123F5C60D0094A958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECBB89DF23F5C60D0094A958 /* LaunchScreen.storyboard */; };
 		ECBB89EC23F5C60D0094A958 /* InterviewStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB89EB23F5C60D0094A958 /* InterviewStoryboardTests.swift */; };
 		ECBB89F723F5C60D0094A958 /* InterviewStoryboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB89F623F5C60D0094A958 /* InterviewStoryboardUITests.swift */; };
-		ECBB8A0723F5C6D80094A958 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8A0623F5C6D80094A958 /* WebViewController.swift */; };
 		ECBB8A0923F5C7190094A958 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8A0823F5C7190094A958 /* User.swift */; };
 		ECBB8A0B23F5C77B0094A958 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8A0A23F5C77B0094A958 /* LandingViewController.swift */; };
 		ECBB8A0D23F5CB620094A958 /* MockedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB8A0C23F5CB620094A958 /* MockedData.swift */; };
@@ -40,10 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC436DF1252BFD2700AFA940 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		ECBB89D123F5C60C0094A958 /* InterviewStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBB89D423F5C60C0094A958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECBB89D623F5C60C0094A958 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ECBB89D823F5C60C0094A958 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ECBB89DB23F5C60C0094A958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECBB89DD23F5C60D0094A958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECBB89E023F5C60D0094A958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,7 +53,6 @@
 		ECBB89F223F5C60D0094A958 /* InterviewStoryboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewStoryboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBB89F623F5C60D0094A958 /* InterviewStoryboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewStoryboardUITests.swift; sourceTree = "<group>"; };
 		ECBB89F823F5C60D0094A958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECBB8A0623F5C6D80094A958 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		ECBB8A0823F5C7190094A958 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ECBB8A0A23F5C77B0094A958 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		ECBB8A0C23F5CB620094A958 /* MockedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedData.swift; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 		ECBB89C823F5C60C0094A958 = {
 			isa = PBXGroup;
 			children = (
-				ECBB8A0623F5C6D80094A958 /* WebViewController.swift */,
 				ECBB89D323F5C60C0094A958 /* InterviewStoryboard */,
 				ECBB89EA23F5C60D0094A958 /* InterviewStoryboardTests */,
 				ECBB89F523F5C60D0094A958 /* InterviewStoryboardUITests */,
@@ -110,9 +107,9 @@
 		ECBB89D323F5C60C0094A958 /* InterviewStoryboard */ = {
 			isa = PBXGroup;
 			children = (
+				EC436DF1252BFD2700AFA940 /* WebViewController.swift */,
 				ECBB89D423F5C60C0094A958 /* AppDelegate.swift */,
 				ECBB89D623F5C60C0094A958 /* SceneDelegate.swift */,
-				ECBB89D823F5C60C0094A958 /* ViewController.swift */,
 				ECBB89DA23F5C60C0094A958 /* Main.storyboard */,
 				ECBB89DD23F5C60D0094A958 /* Assets.xcassets */,
 				ECBB89DF23F5C60D0094A958 /* LaunchScreen.storyboard */,
@@ -274,14 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECBB89D923F5C60C0094A958 /* ViewController.swift in Sources */,
 				ECBB89D523F5C60C0094A958 /* AppDelegate.swift in Sources */,
 				ECBB89D723F5C60C0094A958 /* SceneDelegate.swift in Sources */,
 				ECBB8A0F23F5EFE80094A958 /* SimpleCollectionCell.swift in Sources */,
 				ECBB8A0923F5C7190094A958 /* User.swift in Sources */,
 				ECBB8A0B23F5C77B0094A958 /* LandingViewController.swift in Sources */,
 				ECBB8A0D23F5CB620094A958 /* MockedData.swift in Sources */,
-				ECBB8A0723F5C6D80094A958 /* WebViewController.swift in Sources */,
+				EC436DF2252BFD2700AFA940 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
